@@ -289,7 +289,7 @@ INSERT INTO motor (product_name, voltage, power, purpose, price)
 VALUES (
 	"[RTS] S3508-380KV Motor Set (12~13in/22.2V/ Wire 50cm)", 
     "22.2V (6S)", 
-    330, 
+    330,
     "멀티콥터",
     39800
 );
@@ -404,9 +404,756 @@ VALUES (
 
 INSERT INTO motor (product_name, voltage, power, purpose, price)
 VALUES (
-	"[EMAX] GT3526/04 870kv V2 Brushless Motor", 
-    "14.8V-18.5V (4S-5S)", 
-    1100, 
+	"[DX] C2826 1290KV Outrunner Brushless Motor", 
+    "7.4V-14.8V (2S-4S)", 
+    184, 
     "비행기", 
-    80000
+    22000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[DX] D2830 900KV Outrunner Brushless Motor", 
+    "7.4V-14.8V (2S-4S)", 
+    191, 
+    "비행기", 
+    22000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Sunnysky] Angel A2212 980KV  브러쉬리스 모터",
+    "7.4V-11.1V (2S-3S)", 
+    160, 
+    "비행기", 
+    20000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[HOBBYWING] XRotor 2207 race pro 2650KV", 
+    "14.8V (4S)",
+    825,
+    "멀티콥터",
+    29900
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2212 2450KV II Outrunner Brushless Motor", 
+    "7.4V-11.1V (2S-3S)",
+    320,
+    "비행기",
+    29800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[DYS] D2826/15 Brushless Outrunner 930kv", 
+    "7.4V-11.1V (2S-3S)",
+    130,
+    "비행기",
+    18000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 최신형 Xnova LIGHTNING 4530-525kv[최고급 성능] A타입",
+    "11.1V-37V (3S-10S)",
+    5100,
+    "헬기",
+    568000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 최신형 Xnova LIGHTNING  4535 520KV 10P (초강력파워 최고급모터)", 
+    "11.1V-44.4V (3S-12S)",
+    6500,
+    "헬기",
+    678000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 최신형 Xnova LIGHTNING 4525 600KV 10P [최고급 성능] A타입", 
+    "18.5V-37V (5S-10S)",
+    4600, 
+    "헬기",
+    528000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 최신형 Xnova LIGHTNING 4025 560KV 8P[최고급 성능] B타입", 
+    "11.1V-37V (3S-10S)",
+    3000,
+    "헬기",
+    308000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 최신형  Xnova LIGHTNING 4020-1200KV 2Y 8P[최고급 성능] B타입", 
+    "11.1V-22.2V (3S-6S)", 
+    2300,
+    "헬기",
+    280000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 라이트닝 2207-2300KV lightning racing FPV motor", 
+    "11.1V-14.8V (3S-4S)",
+    930,
+    "멀티콥터",
+    35000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[HOBBYWING] 최신형 XRotor 2207 race pro 1750KV",
+    "14.8V-22.2V (4S-6S)",
+    953,
+    "멀티콥터",
+    29900
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2212 980KV 드론모터 450-550급 (CCW)",
+    "11.1V-14.8V (3S-4S)",
+    412,
+    "멀티콥터",
+    29800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] V3508 380KV 드론용 브러쉬리스 모터 - 6S 22.2v 전용", 
+    "22.2V (6S)",
+    400,
+    "멀티콥터",
+    62400
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2212 980KV 드론모터 450-550급 (CW)", 
+    "11.1V-14.8V (3S-4S)",
+    412,
+    "멀티콥터",
+    29800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[DUALSKY] XM7015HD-5 (330KV/V3) 브러쉬리스 모터",
+    "22.2V (6S)",
+    1480,
+    "멀티콥터",
+    158000
+);
+	
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN V10 G2 Competition Motor(7.5T) (4550KV)", 
+    "7.4V-11.1V (2S-3S)",
+    380,
+    "자동차",
+    82000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN-BANDIT-10.5T-BLACK-G2 (3800KV)", 
+    "7.4V-11.1V (2S-3S)",
+    325,
+    "자동차",
+    82000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"Leopard LBP3674/4D 1650KV 4-Poles 보트용 인러너 브러쉬리스 모터", 
+    "33.3V-37V (9S-10S)",
+    2400,
+    "보트",
+    118000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2820 1100KV Outrunner Brushless Motor",
+    "11.1V-18.5V (3S-5S)",
+    880,
+    "비행기",
+    64800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2820 800KV Outrunner Brushless Motor",
+    "11.1V-18.5V (3S-5S)",
+    700,
+    "비행기",
+    64800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2814 1250KV Outrunner Brushless Motor", 
+    "11.1V-14.8V (3S-4S)",
+    880,
+    "비행기",
+    56800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2814 1100KV Outrunner Brushless Motor", 
+    "11.1V-14.8V (3S-4S)",
+    600,
+    "비행기",
+    56800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2814 1000KV Outrunner Brushless Motor",
+    "11.1V-14.8V (3S-4S)",
+    600,
+    "비행기",
+    56800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2814 900KV Outrunner Brushless Motor",
+    "11.1V-14.8V (3S-4S)",
+    570,
+    "비행기",
+    56800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2216 2400KV Outrunner Brushless Motor",
+    "11.1V-14.8V (3S-4S)",
+    710,
+    "비행기",
+    36800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2216 1800KV Outrunner Brushless Motor",
+    "7.4V-14.8V (2S-4S)",
+    415,
+    "비행기",
+    36800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2216 1400KV Outrunner Brushless Motor",
+    "7.4V-14.8V (2S-4S)",
+    540,
+    "비행기",
+    36800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2216 1250KV Outrunner Brushless Motor",
+    "7.4V-14.8V (2S-4S)",
+    392,
+    "비행기",
+    36800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2216 1100KV Outrunner Brushless Motor",
+    "7.4V-14.8V (2S-4S)",
+    385,
+    "비행기",
+    36800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2212 1400KV II Outrunner Brushless Motor",
+    "7.4V-14.8V (2S-4S)",
+    365,
+    "비행기",
+    29800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2212 1250KV II Outrunner Brushless Motor",
+    "7.4V-14.8V (2S-4S)",
+    390,
+    "비행기",
+    29800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 4808-380KV  촬영 드론용 모터",
+    "14.8V-22.2V (4S-6S)",
+    450,
+    "멀티콥터",
+    99000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] MS4812-320KV 촬영 드론용 모터 (하이토크형)",
+    "22.2V (6S)",
+    550,
+    "멀티콥터",
+    125000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[HOBBYWING] 고급형 중형보트 모터 SEAKING 3660 Motor 4 Pole (3180kv) (수냉식) 2S-4S 리포지원",
+    "7.4V-14.8V (2S-4S)",
+    1600,
+    "보트",
+    102000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN-V10-4.5T-BLACK Sensored Brushless Motor (7600KV) 블랙버전",
+    "7.4V (2S)",
+    500,
+    "자동차",
+    82000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN-V10-13.5T-BLACK  V10 G2 Sensored Brushless Motor (3000KV)",
+    "7.4V-11.1V(2S-3S)",
+    220,
+    "자동차",
+    84000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN-V10-17.5T-BLACK Sensored Brushless Motor (2210KV) 블랙버전",
+    "7.4V-11.1V (2S-3S)",
+    130,
+    "자동차",
+    84000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN-V10-21.5T-BLACK Sensored Brushless Motor (1760KV) 블랙버전 1/10 Cars / Crawler",
+    "7.4V-11.1V (2S-3S)",
+    150,
+    "자동차",
+    82000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN V10 G2 Competition Motor(17.5T) (2300KV)", 
+    "7.4V-11.1V (2S-3S)",
+    150,
+    "자동차",
+    82000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hobbywing] XERUN V10 G2 Competition Motor(10.5T) (3800KV)",
+    "7.4V (2S)",
+    260,
+    "자동차",
+    82000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"Leopard LC2826-9T 1820KV Outrunner Brushless Motor (Prop 7-8)",
+    "7.4V-11.1V (2S-3S)",
+    240,
+    "비행기",
+    34000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Ammo 20-40-3500kV Brushless In-Runner Motor (GPMG5140)",
+    "7.4V-11.1V (2S-3S)",
+    133,
+    "비행기",
+    50000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .10 35-30-1250 Out-runner Brushless Motor (GPMG4595)",
+    "11.1V (3S)",
+    390,
+    "비행기",
+    87800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[DUALSKY] XM2834EA-6 BL Motor(MPX SKYSCOUT용)",
+    "7.4V-11.1V (2S-3S)",
+    285,
+    "비행기",
+    46000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[DUALSKY] XM3548EA-5 BL Motor (MPX/TUCAN용/740KV)",
+    "11.1V-14.8V (3S-4S)",
+    671,
+    "비행기",
+    76000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[PT] Brushless Motor-8mm (950kv)",
+    "7.4V-11.1V (2S-3S)",
+    100,
+    "비행기",
+    25000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"A2212 2200KV Outrunner Brushless Motor",
+    "7.4V-11.1V (2S-3S)",
+    342,
+    "비행기",
+    13000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[E-flite] F4 Phantom Ducted Fan Motor, 2150KV by E-flite",
+    "14.8V-22.2V (4S-6S)",
+    1400,
+    "비행기",
+    109000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[ESKY 002580] 브러쉬리스 모터 3548 / 1500KV",
+    "14.8V (4S)",
+    580,
+    "비행기",
+    31590
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[New.V2] Emax GT-2815/07 Brushless Motor (1100KV)[120g,쿨링팬내장]",
+    "7.4V-11.1V (2S-3S)",
+    400,
+    "비행기",
+    46000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 1.20 50-65-450kV Out-Runner Brushless Motor (GPMG4770)",
+    "18.5V-22.2V (5S-6S)",
+    2300,
+    "비행기",
+    168000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 150 14-05-3000kV Outrunner Brushless Motor (GPMG4453)",
+    "7.4V (2S)",
+    24,
+    "비행기",
+    33000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 200 18-06-2400kV Outrunner Brushless Motor (GPMG4455)",
+    "7.4V (2S)",
+    47,
+    "비행기",
+    35000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 250 28-13-1750kV Outrunner Brushless Motor (GPMG4502)",
+    "7.4V-11.1V (2S-3S)",
+    120,
+    "비행기",
+    51000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 370 28-26-1000kV Out-Runner Brushless Motor (GPMG4525)",
+    "7.4V-11.1V (2S-3S)",
+    165,
+    "비행기",
+    56000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 28-22-1380kV Out-Runner Brushless Motor (GPMG4505)",
+    "7.4V-11.1V (2S-3S)",
+    150,
+    "비행기",
+    51000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 28-30-950kV Out-Runner Brushless Motor (GPMG4560)",
+    "7.4V-11.1V (2S-3S)",
+    220,
+    "비행기",
+    60000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 35-30-950kV Out-Runner Brushless Motor (GPMG4590)",
+    "7.4V-11.1V (2S-3S)",
+    415,
+    "비행기",
+    66000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .15 35-36-1200kV Out-Runner Brushless Motor (GPMG4620)",
+    "11.1V-14.8V (3S-4S)",
+    650,
+    "비행기",
+    71500
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .25 42-40-1000kV Out-Runner Brushless Motor (GPMG4675)",
+    "11.1V-14.8V (3S-4S)",
+    740,
+    "비행기",
+    86000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .32 42-50-800kV Out-Runner Brushless Motor (GPMG4700)",
+    "11.1V-14.8V (3S-4S)",
+    1480,
+    "비행기",
+    100000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .46 42-60-800kV Out-Runner Brushless Motor (GPMG4725)",
+    "18.5V-22.2V (5S-6S)",
+    1850,
+    "비행기",
+    138000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .60 50-55-650kV Out-Runner Brushless Motor (GPMG4745)",
+    "18.5V-22.2V (5S-6S)",
+    2200,
+    "비행기",
+    159000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire 1.60 63-62-250kV Out-Runner Brushless Motor (GPMG4795)",
+    "33.3V-44.4V (9S-12S)",
+    3200,
+    "비행기",
+    289000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .55 42-60-480kV Out-Runner Brushless Motor (GPMG4715)",
+    "18.5V-22.2V (5S-6S)",
+    1850,
+    "비행기",
+    138000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Electrifly] Rimfire .80 50-55-500kV Out-Runner Brushless Motor (GPMG4740)",
+    "18.5V-22.2V (5S-6S)",
+    2200,
+    "비행기",
+    142000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2217K/4 2300KV",
+    "11.1V-14.8V (3S-4S)",
+    200,
+    "비행기",
+    17000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Hacker] A20-34S (1,500kv)",
+    "7.4V (2S)",
+    100,
+    "비행기",
+    58000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[HP] G2220 14-Turn/Glider(930KV)",
+    "7.4V-11.1V	(2S-3S)",
+    440,
+    "비행기",
+    59800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[HP] G2213 20-Turn/Glider(1,030KV)",
+    "7.4V-11.1V (2S-3S)",
+    290,
+    "비행기",
+    53000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[HP] G2213 16-Turn/Glider(1,470KV)",
+    "7.4V-11.1V (2S-3S)",
+    400,
+    "비행기",
+    53000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[HP] Y22S Short Motor (2,850kv)",
+    "7.4V-11.1V	(2S-3S)",
+    200,
+    "비행기",
+    39800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"EMAX CF2822 1200KV Outrunner Brushless Motors",
+    "7.4V-11.1V (2S-3S)",
+    166,
+    "비행기",
+    22500
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"EMAX CF2812 1534KV Outrunner Brushless Motors",
+    "7.4V-11.1V	(2S-3S)",
+    182,
+    "비행기",
+    22500
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2217K/5 1750KV", 
+    "11.1V-14.8V (3S-4S)",
+    200,
+    "비행기",
+    17000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2217K/6 1500KV",
+    "11.1V-14.8V (3S-4S)",
+    200,
+    "비행기",
+    17000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2217K/7 1250KV",
+    "7.4V-11.1V (2S-3S)",
+    200,
+    "비행기",
+    17000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2217K/8 1100KV",
+    "7.4V-14.8V	(2S-4S)",
+    200,
+    "비행기",
+    19000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2217K/9 950KV",
+    "7.4V-11.1V	(2S-3S)",
+    200,
+    "비행기",
+    19000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2212 1400KV",
+    "7.4V-11.1V	(2S-3S)",
+    180,
+    "비행기",
+    13500
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2212 1000KV",
+    "7.4V-11.1V	(2S-3S)",
+    150,
+    "비행기",
+    15000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2208/8 2600KV",
+    "7.4V-11.1V	(2S-3S)",
+    220,
+    "비행기",
+    13000
 );
