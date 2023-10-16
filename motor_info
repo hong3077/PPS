@@ -1,0 +1,412 @@
+CREATE TABLE motor (
+    product_name VARCHAR(255) NOT NULL,
+    voltage VARCHAR(255),
+    power INT,
+    purpose VARCHAR(255),
+    price INT
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+    "[SUNNYSKY] X2826 1080KV Outrunner Brushless Motor",
+    "11.1V-14.8V (3S-4S)",
+    950,
+    "비행기",
+    84800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2826 880KV Outrunner Brushless Motor",
+    "11.1V-14.8V (3S-4S)",
+    900,
+    "비행기",
+    84800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SUNNYSKY] X2826 740KV Outrunner Brushless Motor",
+    "11.1V-14.8V (3S-4S)",
+    880,
+    "비행기",
+    84800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[T-MOTOR] AM30 3D/4D 1750KV 모터",
+    "7.4V-11.1V	(2S-3S)",
+    182,
+    "비행기",
+    37000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[T-motor] VELOX V2812 1155KV 모터", 
+    "22.2V (6S)", 
+    1520,
+    "멀티콥터", 
+    51000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[T-motor] VELOX V3008 1155KV 모터", 
+    "22.2V (6S)", 
+    1314, 
+    "멀티콥터", 
+    49000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[T-motor] F60pro V5-LV 2020KV 모터", 
+    "22.2V (6S)",
+    1306, 
+    "멀티콥터",
+    37500
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Scorpion] S2205-36 BL Motor(1,670KV)", 
+    "11.1V (3S)", 
+    110, 
+    "비행기", 
+    39800
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[DUALSKY] XM4006HD-8 (28Pole/1,000KV/208W)", 
+    "11.1V (3S)", 
+    208, 
+    "멀티콥터", 
+    46800
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[T-motor] V2207.5 V2 2550KV 모터 (블루)",
+	"14.8V-18.5V (4S-5S)", 
+    557, 
+    "멀티콥터", 
+    26500
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 2813-1750Kv Outrunner Brushless Motor", 
+    "7.4V-11.1V (2S-3S)", 
+    60, 
+    "비행기", 
+    58000
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 2830-950Kv Outrunner Brushless Motor", 
+    "7.4V-11.1V (2S-3S)", 
+    160, 
+    "비행기", 
+    74500
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 3530-1250Kv Outrunner Brushless Motor", 
+    "7.4V-11.1V (2S-3S)", 
+    220, 
+    "비행기", 
+    84900
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 4240-1000Kv Outrunner Brushless Motor", 
+    "11.1V-14.8V (3S-4S)", 
+    375, 
+    "비행기", 
+    129000
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 4250-800Kv Outrunner Brushless Motor", 
+    "11.1V-14.8V (3S-4S)", 
+    600, 
+    "비행기", 
+    140000
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 6362-250Kv Outrunner Brushless Motor", 
+    "33.3V-44.4V (9S-12S)",
+    1900, 
+    "비행기", 
+    276000
+); 
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 4260-480Kv Outrunner Brushless Motor", 
+    "18.5V-22.2V (5S-6S)", 
+    810, 
+    "비행기", 
+    149000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 5055-500Kv Outrunner Brushless Motor", 
+    "18.5V-22.2V (5S-6S)", 
+    900, 
+    "비행기", 
+    169000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 5065-450Kv Outrunner Brushless Motor", 
+    "18.5V-22.2V (5S-6S)", 
+    1200, 
+    "비행기", 
+    213000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 4260-800Kv Outrunner Brushless Motor", 
+    "18.5V-22.2V (5S-6S)",
+    810, 
+    "비행기", 
+    149000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[SPEKTRUM] Avian 5055-650Kv Outrunner Brushless Motor", 
+    "18.5V-22.2V (5S-6S)", 
+    900, 
+    "비행기", 
+    169000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[TR] 3515-400KV BL Motor (400KV/14~16in Prop) for Drone", 
+    "22.2V (6S)", 
+    630, 
+    "멀티콥터", 
+    72000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[PT] F5015-330KV Motor Set(21~22in/22.2V)", 
+    "22.2V (6S)", 
+    550, 
+    "멀티콥터", 
+    108000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Xnova] 라이트닝 4035-480KV 2.5Y 8P 하이엔드급 헬기용 브러쉬리스 모터 10s~14s 리포지원", 
+    "37V-51.8V (10S-14S)", 
+    4000, 
+    "헬기", 
+    475000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[E-FLITE] Power 90 Brushless Outrunner Motor 325Kv (90급용 브러시리스모터)", 
+    "22.2V-29.6V (6S-8S)", 
+    1800, 
+    "비행기", 
+    239000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[E-FLITE] Power 46 Brushless Outrunner Motor, 670Kv", 
+    "14.8V-18.5V (4S-5S)", 
+    800, 
+    "비행기", 
+    131000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[E-FLITE] Power 60 Brushless Outrunner Motor, 400Kv", 
+    "18.5V-25.9V (5S-7S)", 
+    1200, 
+    "비행기", 
+    199500
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[E-FLITE] Power 32 Brushless Outrunner Motor, 770Kv", 
+    "11.1V-14.8V (3S-4S)", 
+    700, 
+    "비행기", 
+    139000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"T-motor AM40-3D 1500KV 모터", 
+    "7.4V-11.1V (2S-3S)", 
+    193, 
+    "비행기", 
+    35000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[EMAX] MT4114 340KV 브러쉬리스 모터", 
+    "22.2V (6S)", 
+    420, 
+    "멀티콥터", 
+    58660
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"Leopard LC6362-4T 540KV Outrunner Brushless Motor (Prop 15-17)", 
+    "11.1V-22.2V (3S-6S)", 
+    1575, 
+    "비행기", 
+    182000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[RTS] S3508-380KV Motor Set (12~13in/22.2V/ Wire 50cm)", 
+    "22.2V (6S)", 
+    330, 
+    "멀티콥터",
+    39800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2212 2700KV",
+    "7.4V-11.1V (2S-3S)", 
+    220, 
+    "비행기", 
+    13500
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[DUALSKY] XM4006HD-10 (28Pole/800KV/232W) 멀티콥터용 브러쉬리스 모터 - 4셀 사용",
+    "14.8V (4S)", 
+    232, 
+    "멀티콥터", 
+    46800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"브러쉬리스 모터 A2217K/6 2700KV", 
+    "7.4V-11.1V (2S-3S)", 
+    550, 
+    "비행기", 
+    19000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[World Model] 28/31 3030kv 70mm 덕트팬용 4Cell 배터리용 브러쉬리스 모터", 
+    "7.4V-14.8V (2S-4S)", 
+    660, 
+    "비행기", 
+    34000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[RTS] RS2205-2300KV 레이싱드론용 정방향 모터", 
+    "11.1V-14.8V (3S-4S)", 
+    400, 
+    "멀티콥터", 
+    13800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[RTS] RS2205-2300KV 레이싱드론용 역방향 모터", 
+    "11.1V-14.8V (3S-4S)", 
+    400, 
+    "멀티콥터", 
+    13800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[TR] T2212-920KV 브러쉬리스 모터 셋트", 
+    "11.1V-14.8V (3S-4S)", 
+    341, 
+    "멀티콥터", 
+    26800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Nobrand] 2204 2300KV 브러쉬리스 모터 CCW", 
+    "11.1V-14.8V (3S-4S)", 
+    270, 
+    "멀티콥터", 
+    11000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[Nobrand] 2204 2300KV 브러쉬리스 모터 CW", 
+    "11.1V-14.8V (3S-4S)", 
+    270, 
+    "멀티콥터", 
+    11000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[RTS] S2312-920KV Motor Set(w/9x4.5in Self Lock Prop/CW/CCW)", 
+    "7.4V-14.8V (2S-4S)", 
+    220, 
+    "멀티콥터", 
+    34000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[RTS] S2312-920KV Motor for F450/F550/S500/TBS500 Multicopter(CW/HP/V3)", 
+    "7.4V-14.8V (2S-4S)", 
+    220, 
+    "멀티콥터", 
+    15800
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[EMAX] GT3526/04 870kv V2 Brushless Motor", 
+    "14.8V-18.5V (4S-5S)", 
+    1100, 
+    "비행기", 
+    80000
+);
+
+INSERT INTO motor (product_name, voltage, power, purpose, price)
+VALUES (
+	"[EMAX] GT3526/04 870kv V2 Brushless Motor", 
+    "14.8V-18.5V (4S-5S)", 
+    1100, 
+    "비행기", 
+    80000
+);
