@@ -1,4 +1,4 @@
-CREATE TABLE motor (
+CREATE TABLE Item (
     product_name VARCHAR(255) NOT NULL,
     voltage VARCHAR(255),
     power INT,
@@ -6,7 +6,7 @@ CREATE TABLE motor (
     price INT
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
     "[SUNNYSKY] X2826 1080KV Outrunner Brushless Motor",
     "11.1V-14.8V (3S-4S)",
@@ -15,7 +15,7 @@ VALUES (
     84800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2826 880KV Outrunner Brushless Motor",
     "11.1V-14.8V (3S-4S)",
@@ -24,7 +24,7 @@ VALUES (
     84800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2826 740KV Outrunner Brushless Motor",
     "11.1V-14.8V (3S-4S)",
@@ -33,7 +33,7 @@ VALUES (
     84800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[T-MOTOR] AM30 3D/4D 1750KV 모터",
     "7.4V-11.1V	(2S-3S)",
@@ -42,7 +42,7 @@ VALUES (
     37000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[T-motor] VELOX V2812 1155KV 모터", 
     "22.2V (6S)", 
@@ -51,7 +51,7 @@ VALUES (
     51000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[T-motor] VELOX V3008 1155KV 모터", 
     "22.2V (6S)", 
@@ -60,7 +60,7 @@ VALUES (
     49000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[T-motor] F60pro V5-LV 2020KV 모터", 
     "22.2V (6S)",
@@ -69,7 +69,7 @@ VALUES (
     37500
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Scorpion] S2205-36 BL Motor(1,670KV)", 
     "11.1V (3S)", 
@@ -78,7 +78,7 @@ VALUES (
     39800
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DUALSKY] XM4006HD-8 (28Pole/1,000KV/208W)", 
     "11.1V (3S)", 
@@ -87,7 +87,7 @@ VALUES (
     46800
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[T-motor] V2207.5 V2 2550KV 모터 (블루)",
 	"14.8V-18.5V (4S-5S)", 
@@ -96,7 +96,7 @@ VALUES (
     26500
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 2813-1750Kv Outrunner Brushless Motor", 
     "7.4V-11.1V (2S-3S)", 
@@ -105,7 +105,7 @@ VALUES (
     58000
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 2830-950Kv Outrunner Brushless Motor", 
     "7.4V-11.1V (2S-3S)", 
@@ -114,7 +114,7 @@ VALUES (
     74500
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 3530-1250Kv Outrunner Brushless Motor", 
     "7.4V-11.1V (2S-3S)", 
@@ -123,7 +123,7 @@ VALUES (
     84900
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 4240-1000Kv Outrunner Brushless Motor", 
     "11.1V-14.8V (3S-4S)", 
@@ -132,7 +132,7 @@ VALUES (
     129000
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 4250-800Kv Outrunner Brushless Motor", 
     "11.1V-14.8V (3S-4S)", 
@@ -141,7 +141,7 @@ VALUES (
     140000
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 6362-250Kv Outrunner Brushless Motor", 
     "33.3V-44.4V (9S-12S)",
@@ -150,7 +150,7 @@ VALUES (
     276000
 ); 
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 4260-480Kv Outrunner Brushless Motor", 
     "18.5V-22.2V (5S-6S)", 
@@ -159,7 +159,7 @@ VALUES (
     149000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 5055-500Kv Outrunner Brushless Motor", 
     "18.5V-22.2V (5S-6S)", 
@@ -168,7 +168,7 @@ VALUES (
     169000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 5065-450Kv Outrunner Brushless Motor", 
     "18.5V-22.2V (5S-6S)", 
@@ -177,7 +177,7 @@ VALUES (
     213000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 4260-800Kv Outrunner Brushless Motor", 
     "18.5V-22.2V (5S-6S)",
@@ -186,7 +186,7 @@ VALUES (
     149000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SPEKTRUM] Avian 5055-650Kv Outrunner Brushless Motor", 
     "18.5V-22.2V (5S-6S)", 
@@ -195,7 +195,7 @@ VALUES (
     169000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[TR] 3515-400KV BL Motor (400KV/14~16in Prop) for Drone", 
     "22.2V (6S)", 
@@ -204,7 +204,7 @@ VALUES (
     72000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[PT] F5015-330KV Motor Set(21~22in/22.2V)", 
     "22.2V (6S)", 
@@ -213,7 +213,7 @@ VALUES (
     108000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 라이트닝 4035-480KV 2.5Y 8P 하이엔드급 헬기용 브러쉬리스 모터 10s~14s 리포지원", 
     "37V-51.8V (10S-14S)", 
@@ -222,7 +222,7 @@ VALUES (
     475000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[E-FLITE] Power 90 Brushless Outrunner Motor 325Kv (90급용 브러시리스모터)", 
     "22.2V-29.6V (6S-8S)", 
@@ -231,7 +231,7 @@ VALUES (
     239000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[E-FLITE] Power 46 Brushless Outrunner Motor, 670Kv", 
     "14.8V-18.5V (4S-5S)", 
@@ -240,7 +240,7 @@ VALUES (
     131000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[E-FLITE] Power 60 Brushless Outrunner Motor, 400Kv", 
     "18.5V-25.9V (5S-7S)", 
@@ -249,7 +249,7 @@ VALUES (
     199500
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[E-FLITE] Power 32 Brushless Outrunner Motor, 770Kv", 
     "11.1V-14.8V (3S-4S)", 
@@ -258,7 +258,7 @@ VALUES (
     139000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"T-motor AM40-3D 1500KV 모터", 
     "7.4V-11.1V (2S-3S)", 
@@ -267,7 +267,7 @@ VALUES (
     35000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[EMAX] MT4114 340KV 브러쉬리스 모터", 
     "22.2V (6S)", 
@@ -276,7 +276,7 @@ VALUES (
     58660
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"Leopard LC6362-4T 540KV Outrunner Brushless Motor (Prop 15-17)", 
     "11.1V-22.2V (3S-6S)", 
@@ -285,7 +285,7 @@ VALUES (
     182000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[RTS] S3508-380KV Motor Set (12~13in/22.2V/ Wire 50cm)", 
     "22.2V (6S)", 
@@ -294,7 +294,7 @@ VALUES (
     39800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2212 2700KV",
     "7.4V-11.1V (2S-3S)", 
@@ -303,7 +303,7 @@ VALUES (
     13500
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DUALSKY] XM4006HD-10 (28Pole/800KV/232W) 멀티콥터용 브러쉬리스 모터 - 4셀 사용",
     "14.8V (4S)", 
@@ -312,7 +312,7 @@ VALUES (
     46800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2217K/6 2700KV", 
     "7.4V-11.1V (2S-3S)", 
@@ -321,7 +321,7 @@ VALUES (
     19000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[World Model] 28/31 3030kv 70mm 덕트팬용 4Cell 배터리용 브러쉬리스 모터", 
     "7.4V-14.8V (2S-4S)", 
@@ -330,7 +330,7 @@ VALUES (
     34000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[RTS] RS2205-2300KV 레이싱드론용 정방향 모터", 
     "11.1V-14.8V (3S-4S)", 
@@ -339,7 +339,7 @@ VALUES (
     13800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[RTS] RS2205-2300KV 레이싱드론용 역방향 모터", 
     "11.1V-14.8V (3S-4S)", 
@@ -348,7 +348,7 @@ VALUES (
     13800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[TR] T2212-920KV 브러쉬리스 모터 셋트", 
     "11.1V-14.8V (3S-4S)", 
@@ -357,7 +357,7 @@ VALUES (
     26800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Nobrand] 2204 2300KV 브러쉬리스 모터 CCW", 
     "11.1V-14.8V (3S-4S)", 
@@ -366,7 +366,7 @@ VALUES (
     11000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Nobrand] 2204 2300KV 브러쉬리스 모터 CW", 
     "11.1V-14.8V (3S-4S)", 
@@ -375,7 +375,7 @@ VALUES (
     11000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[RTS] S2312-920KV Motor Set(w/9x4.5in Self Lock Prop/CW/CCW)", 
     "7.4V-14.8V (2S-4S)", 
@@ -384,7 +384,7 @@ VALUES (
     34000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[RTS] S2312-920KV Motor for F450/F550/S500/TBS500 Multicopter(CW/HP/V3)", 
     "7.4V-14.8V (2S-4S)", 
@@ -393,7 +393,7 @@ VALUES (
     15800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[EMAX] GT3526/04 870kv V2 Brushless Motor", 
     "14.8V-18.5V (4S-5S)", 
@@ -402,7 +402,7 @@ VALUES (
     80000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DX] C2826 1290KV Outrunner Brushless Motor", 
     "7.4V-14.8V (2S-4S)", 
@@ -411,7 +411,7 @@ VALUES (
     22000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DX] D2830 900KV Outrunner Brushless Motor", 
     "7.4V-14.8V (2S-4S)", 
@@ -420,7 +420,7 @@ VALUES (
     22000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Sunnysky] Angel A2212 980KV  브러쉬리스 모터",
     "7.4V-11.1V (2S-3S)", 
@@ -429,7 +429,7 @@ VALUES (
     20000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[HOBBYWING] XRotor 2207 race pro 2650KV", 
     "14.8V (4S)",
@@ -438,7 +438,7 @@ VALUES (
     29900
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2212 2450KV II Outrunner Brushless Motor", 
     "7.4V-11.1V (2S-3S)",
@@ -447,7 +447,7 @@ VALUES (
     29800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DYS] D2826/15 Brushless Outrunner 930kv", 
     "7.4V-11.1V (2S-3S)",
@@ -456,7 +456,7 @@ VALUES (
     18000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 최신형 Xnova LIGHTNING 4530-525kv[최고급 성능] A타입",
     "11.1V-37V (3S-10S)",
@@ -465,7 +465,7 @@ VALUES (
     568000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 최신형 Xnova LIGHTNING  4535 520KV 10P (초강력파워 최고급모터)", 
     "11.1V-44.4V (3S-12S)",
@@ -474,7 +474,7 @@ VALUES (
     678000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 최신형 Xnova LIGHTNING 4525 600KV 10P [최고급 성능] A타입", 
     "18.5V-37V (5S-10S)",
@@ -483,7 +483,7 @@ VALUES (
     528000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 최신형 Xnova LIGHTNING 4025 560KV 8P[최고급 성능] B타입", 
     "11.1V-37V (3S-10S)",
@@ -492,7 +492,7 @@ VALUES (
     308000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 최신형  Xnova LIGHTNING 4020-1200KV 2Y 8P[최고급 성능] B타입", 
     "11.1V-22.2V (3S-6S)", 
@@ -501,7 +501,7 @@ VALUES (
     280000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 라이트닝 2207-2300KV lightning racing FPV motor", 
     "11.1V-14.8V (3S-4S)",
@@ -510,7 +510,7 @@ VALUES (
     35000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[HOBBYWING] 최신형 XRotor 2207 race pro 1750KV",
     "14.8V-22.2V (4S-6S)",
@@ -519,7 +519,7 @@ VALUES (
     29900
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2212 980KV 드론모터 450-550급 (CCW)",
     "11.1V-14.8V (3S-4S)",
@@ -528,7 +528,7 @@ VALUES (
     29800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] V3508 380KV 드론용 브러쉬리스 모터 - 6S 22.2v 전용", 
     "22.2V (6S)",
@@ -537,7 +537,7 @@ VALUES (
     62400
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2212 980KV 드론모터 450-550급 (CW)", 
     "11.1V-14.8V (3S-4S)",
@@ -546,7 +546,7 @@ VALUES (
     29800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DUALSKY] XM7015HD-5 (330KV/V3) 브러쉬리스 모터",
     "22.2V (6S)",
@@ -555,7 +555,7 @@ VALUES (
     158000
 );
 	
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN V10 G2 Competition Motor(7.5T) (4550KV)", 
     "7.4V-11.1V (2S-3S)",
@@ -564,7 +564,7 @@ VALUES (
     82000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN-BANDIT-10.5T-BLACK-G2 (3800KV)", 
     "7.4V-11.1V (2S-3S)",
@@ -573,7 +573,7 @@ VALUES (
     82000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"Leopard LBP3674/4D 1650KV 4-Poles 보트용 인러너 브러쉬리스 모터", 
     "33.3V-37V (9S-10S)",
@@ -582,7 +582,7 @@ VALUES (
     118000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2820 1100KV Outrunner Brushless Motor",
     "11.1V-18.5V (3S-5S)",
@@ -591,7 +591,7 @@ VALUES (
     64800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2820 800KV Outrunner Brushless Motor",
     "11.1V-18.5V (3S-5S)",
@@ -600,7 +600,7 @@ VALUES (
     64800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2814 1250KV Outrunner Brushless Motor", 
     "11.1V-14.8V (3S-4S)",
@@ -609,7 +609,7 @@ VALUES (
     56800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2814 1100KV Outrunner Brushless Motor", 
     "11.1V-14.8V (3S-4S)",
@@ -618,7 +618,7 @@ VALUES (
     56800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2814 1000KV Outrunner Brushless Motor",
     "11.1V-14.8V (3S-4S)",
@@ -627,7 +627,7 @@ VALUES (
     56800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2814 900KV Outrunner Brushless Motor",
     "11.1V-14.8V (3S-4S)",
@@ -636,7 +636,7 @@ VALUES (
     56800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2216 2400KV Outrunner Brushless Motor",
     "11.1V-14.8V (3S-4S)",
@@ -645,7 +645,7 @@ VALUES (
     36800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2216 1800KV Outrunner Brushless Motor",
     "7.4V-14.8V (2S-4S)",
@@ -654,7 +654,7 @@ VALUES (
     36800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2216 1400KV Outrunner Brushless Motor",
     "7.4V-14.8V (2S-4S)",
@@ -663,7 +663,7 @@ VALUES (
     36800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2216 1250KV Outrunner Brushless Motor",
     "7.4V-14.8V (2S-4S)",
@@ -672,7 +672,7 @@ VALUES (
     36800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2216 1100KV Outrunner Brushless Motor",
     "7.4V-14.8V (2S-4S)",
@@ -681,7 +681,7 @@ VALUES (
     36800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2212 1400KV II Outrunner Brushless Motor",
     "7.4V-14.8V (2S-4S)",
@@ -690,7 +690,7 @@ VALUES (
     29800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[SUNNYSKY] X2212 1250KV II Outrunner Brushless Motor",
     "7.4V-14.8V (2S-4S)",
@@ -699,7 +699,7 @@ VALUES (
     29800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] 4808-380KV  촬영 드론용 모터",
     "14.8V-22.2V (4S-6S)",
@@ -708,7 +708,7 @@ VALUES (
     99000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Xnova] MS4812-320KV 촬영 드론용 모터 (하이토크형)",
     "22.2V (6S)",
@@ -717,7 +717,7 @@ VALUES (
     125000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[HOBBYWING] 고급형 중형보트 모터 SEAKING 3660 Motor 4 Pole (3180kv) (수냉식) 2S-4S 리포지원",
     "7.4V-14.8V (2S-4S)",
@@ -726,7 +726,7 @@ VALUES (
     102000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN-V10-4.5T-BLACK Sensored Brushless Motor (7600KV) 블랙버전",
     "7.4V (2S)",
@@ -735,7 +735,7 @@ VALUES (
     82000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN-V10-13.5T-BLACK  V10 G2 Sensored Brushless Motor (3000KV)",
     "7.4V-11.1V(2S-3S)",
@@ -744,7 +744,7 @@ VALUES (
     84000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN-V10-17.5T-BLACK Sensored Brushless Motor (2210KV) 블랙버전",
     "7.4V-11.1V (2S-3S)",
@@ -753,7 +753,7 @@ VALUES (
     84000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN-V10-21.5T-BLACK Sensored Brushless Motor (1760KV) 블랙버전 1/10 Cars / Crawler",
     "7.4V-11.1V (2S-3S)",
@@ -762,7 +762,7 @@ VALUES (
     82000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN V10 G2 Competition Motor(17.5T) (2300KV)", 
     "7.4V-11.1V (2S-3S)",
@@ -771,7 +771,7 @@ VALUES (
     82000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hobbywing] XERUN V10 G2 Competition Motor(10.5T) (3800KV)",
     "7.4V (2S)",
@@ -780,7 +780,7 @@ VALUES (
     82000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"Leopard LC2826-9T 1820KV Outrunner Brushless Motor (Prop 7-8)",
     "7.4V-11.1V (2S-3S)",
@@ -789,7 +789,7 @@ VALUES (
     34000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Ammo 20-40-3500kV Brushless In-Runner Motor (GPMG5140)",
     "7.4V-11.1V (2S-3S)",
@@ -798,7 +798,7 @@ VALUES (
     50000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .10 35-30-1250 Out-runner Brushless Motor (GPMG4595)",
     "11.1V (3S)",
@@ -807,7 +807,7 @@ VALUES (
     87800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DUALSKY] XM2834EA-6 BL Motor(MPX SKYSCOUT용)",
     "7.4V-11.1V (2S-3S)",
@@ -816,7 +816,7 @@ VALUES (
     46000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[DUALSKY] XM3548EA-5 BL Motor (MPX/TUCAN용/740KV)",
     "11.1V-14.8V (3S-4S)",
@@ -825,7 +825,7 @@ VALUES (
     76000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[PT] Brushless Motor-8mm (950kv)",
     "7.4V-11.1V (2S-3S)",
@@ -834,7 +834,7 @@ VALUES (
     25000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"A2212 2200KV Outrunner Brushless Motor",
     "7.4V-11.1V (2S-3S)",
@@ -843,7 +843,7 @@ VALUES (
     13000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[E-flite] F4 Phantom Ducted Fan Motor, 2150KV by E-flite",
     "14.8V-22.2V (4S-6S)",
@@ -852,7 +852,7 @@ VALUES (
     109000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[ESKY 002580] 브러쉬리스 모터 3548 / 1500KV",
     "14.8V (4S)",
@@ -861,7 +861,7 @@ VALUES (
     31590
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[New.V2] Emax GT-2815/07 Brushless Motor (1100KV)[120g,쿨링팬내장]",
     "7.4V-11.1V (2S-3S)",
@@ -870,7 +870,7 @@ VALUES (
     46000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 1.20 50-65-450kV Out-Runner Brushless Motor (GPMG4770)",
     "18.5V-22.2V (5S-6S)",
@@ -879,7 +879,7 @@ VALUES (
     168000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 150 14-05-3000kV Outrunner Brushless Motor (GPMG4453)",
     "7.4V (2S)",
@@ -888,7 +888,7 @@ VALUES (
     33000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 200 18-06-2400kV Outrunner Brushless Motor (GPMG4455)",
     "7.4V (2S)",
@@ -897,7 +897,7 @@ VALUES (
     35000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 250 28-13-1750kV Outrunner Brushless Motor (GPMG4502)",
     "7.4V-11.1V (2S-3S)",
@@ -906,7 +906,7 @@ VALUES (
     51000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 370 28-26-1000kV Out-Runner Brushless Motor (GPMG4525)",
     "7.4V-11.1V (2S-3S)",
@@ -915,7 +915,7 @@ VALUES (
     56000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 28-22-1380kV Out-Runner Brushless Motor (GPMG4505)",
     "7.4V-11.1V (2S-3S)",
@@ -924,7 +924,7 @@ VALUES (
     51000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 28-30-950kV Out-Runner Brushless Motor (GPMG4560)",
     "7.4V-11.1V (2S-3S)",
@@ -933,7 +933,7 @@ VALUES (
     60000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 35-30-950kV Out-Runner Brushless Motor (GPMG4590)",
     "7.4V-11.1V (2S-3S)",
@@ -942,7 +942,7 @@ VALUES (
     66000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .15 35-36-1200kV Out-Runner Brushless Motor (GPMG4620)",
     "11.1V-14.8V (3S-4S)",
@@ -951,7 +951,7 @@ VALUES (
     71500
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .25 42-40-1000kV Out-Runner Brushless Motor (GPMG4675)",
     "11.1V-14.8V (3S-4S)",
@@ -960,7 +960,7 @@ VALUES (
     86000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .32 42-50-800kV Out-Runner Brushless Motor (GPMG4700)",
     "11.1V-14.8V (3S-4S)",
@@ -969,7 +969,7 @@ VALUES (
     100000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .46 42-60-800kV Out-Runner Brushless Motor (GPMG4725)",
     "18.5V-22.2V (5S-6S)",
@@ -978,7 +978,7 @@ VALUES (
     138000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .60 50-55-650kV Out-Runner Brushless Motor (GPMG4745)",
     "18.5V-22.2V (5S-6S)",
@@ -987,7 +987,7 @@ VALUES (
     159000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire 1.60 63-62-250kV Out-Runner Brushless Motor (GPMG4795)",
     "33.3V-44.4V (9S-12S)",
@@ -996,7 +996,7 @@ VALUES (
     289000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .55 42-60-480kV Out-Runner Brushless Motor (GPMG4715)",
     "18.5V-22.2V (5S-6S)",
@@ -1005,7 +1005,7 @@ VALUES (
     138000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Electrifly] Rimfire .80 50-55-500kV Out-Runner Brushless Motor (GPMG4740)",
     "18.5V-22.2V (5S-6S)",
@@ -1014,7 +1014,7 @@ VALUES (
     142000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2217K/4 2300KV",
     "11.1V-14.8V (3S-4S)",
@@ -1023,7 +1023,7 @@ VALUES (
     17000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[Hacker] A20-34S (1,500kv)",
     "7.4V (2S)",
@@ -1032,7 +1032,7 @@ VALUES (
     58000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[HP] G2220 14-Turn/Glider(930KV)",
     "7.4V-11.1V	(2S-3S)",
@@ -1041,7 +1041,7 @@ VALUES (
     59800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[HP] G2213 20-Turn/Glider(1,030KV)",
     "7.4V-11.1V (2S-3S)",
@@ -1050,7 +1050,7 @@ VALUES (
     53000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[HP] G2213 16-Turn/Glider(1,470KV)",
     "7.4V-11.1V (2S-3S)",
@@ -1059,7 +1059,7 @@ VALUES (
     53000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"[HP] Y22S Short Motor (2,850kv)",
     "7.4V-11.1V	(2S-3S)",
@@ -1068,7 +1068,7 @@ VALUES (
     39800
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"EMAX CF2822 1200KV Outrunner Brushless Motors",
     "7.4V-11.1V (2S-3S)",
@@ -1077,7 +1077,7 @@ VALUES (
     22500
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"EMAX CF2812 1534KV Outrunner Brushless Motors",
     "7.4V-11.1V	(2S-3S)",
@@ -1086,7 +1086,7 @@ VALUES (
     22500
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2217K/5 1750KV", 
     "11.1V-14.8V (3S-4S)",
@@ -1095,7 +1095,7 @@ VALUES (
     17000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2217K/6 1500KV",
     "11.1V-14.8V (3S-4S)",
@@ -1104,7 +1104,7 @@ VALUES (
     17000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2217K/7 1250KV",
     "7.4V-11.1V (2S-3S)",
@@ -1113,7 +1113,7 @@ VALUES (
     17000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2217K/8 1100KV",
     "7.4V-14.8V	(2S-4S)",
@@ -1122,7 +1122,7 @@ VALUES (
     19000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2217K/9 950KV",
     "7.4V-11.1V	(2S-3S)",
@@ -1131,7 +1131,7 @@ VALUES (
     19000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2212 1400KV",
     "7.4V-11.1V	(2S-3S)",
@@ -1140,7 +1140,7 @@ VALUES (
     13500
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2212 1000KV",
     "7.4V-11.1V	(2S-3S)",
@@ -1149,7 +1149,7 @@ VALUES (
     15000
 );
 
-INSERT INTO motor (product_name, voltage, power, purpose, price)
+INSERT INTO Item (product_name, voltage, power, purpose, price)
 VALUES (
 	"브러쉬리스 모터 A2208/8 2600KV",
     "7.4V-11.1V	(2S-3S)",
