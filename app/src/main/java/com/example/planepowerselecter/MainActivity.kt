@@ -1,11 +1,11 @@
 package com.example.planepowerselecter
 
-import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import java.lang.Math.round
+import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,16 +15,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val aircraftWeight: TextView = findViewById(R.id.aircraft_weight_value)
-        val calculation: Button = findViewById(R.id.calculate_button)
+        ButtonTriggered()
+    }
 
+    fun ButtonTriggered(){
+        val button = findViewById<Button>(R.id.calculateButton)
+        button.setOnClickListener{
 
-        calculation.setOnClickListener{
-            setContentView(R.layout.required_motor)
-            requiredPower = findViewById(R.id.required_motor_power)
-            var weight0 = aircraftWeight.text.toString()
-            var weight:Int = weight0.toInt()
-            requiredPower.text = round(((weight * 80) / 453.6)).toString() + " (watt)"
+            val intent = Intent(this,SubActivity::class.java)
+            var input: String = findViewById<TextView>(R.id.aircraft_weight_value).text.toString()
+            var weight:Int = input.toInt()
+            intent.putExtra("aircraftWeight",weight)
+
+            
+            startActivity(intent)
 
         }
     }
