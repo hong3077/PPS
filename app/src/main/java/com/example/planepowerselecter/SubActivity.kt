@@ -40,18 +40,6 @@ class SubActivity : AppCompatActivity() {
 
     fun Add_Info(arrayString: Array<Array<String>>){
 
-        //공백없는 배열 크기
-        fun ArrayCount(arrayString: Array<Array<String>>):Int{
-            var count:Int = 0
-            for(i:Int in 0..(arrayString.size - 1)) {
-                if (arrayString[i][0] != "0") {
-                    count++
-                }
-            }
-            return count
-        }
-        var arraySize = ArrayCount(arrayString)
-
         //리스트 입력 파트
         var infoList1 = Array<String>(arrayString.size,{""})
 
@@ -65,7 +53,7 @@ class SubActivity : AppCompatActivity() {
         }
 
         var infoList0:String = ""
-        for(i: Int in 0..(arraySize-1)){
+        for(i: Int in 0..(arrayString.size - 1)){
             if(arrayString[i][0] != "0") {
                 infoList0 = infoList0.plus(infoList1[i])
                 infoList0 = infoList0.plus("\n\n")
@@ -128,20 +116,6 @@ class SubActivity : AppCompatActivity() {
                 arrayString[count][4] = post.cost.toString()
                 count = count + 1
             }
-
-//            val valuesArray = arrayOf(
-//                post.product_name,
-//                post.voltage,
-//                post.power,
-//                post.purpose,
-//                post.cost
-//            )
-
-            // Join the array elements into a single string
-            //val content = valuesArray.joinToString(separator = "\n") { "$it" }
-
-            // Append the content to the textView
-            //textView.append("$content\n\n")
         }
     }
 
