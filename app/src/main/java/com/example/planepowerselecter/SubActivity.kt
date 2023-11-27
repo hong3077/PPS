@@ -42,27 +42,21 @@ class SubActivity : AppCompatActivity() {
 
         //리스트 입력 파트
         var infoList1 = Array<String>(arrayString.size,{""})
+        var infoList:String = ""
 
-        for(i in 0..(arrayString.count() - 1)){
+        for(i in 0..(arrayString.size - 1)){
             for(j: Int in 0..4){
                 if (arrayString[i][0] != "0") {
                     infoList1[i] = infoList1[i].plus(arrayString[i][j])
                     infoList1[i] = infoList1[i].plus(" | ")
+                    infoList = infoList.plus(infoList1[i])
+                    infoList = infoList.plus("\n\n")
                 }
             }
         }
 
-        var infoList0:String = ""
-        for(i: Int in 0..(arrayString.size - 1)){
-            if(arrayString[i][0] != "0") {
-                infoList0 = infoList0.plus(infoList1[i])
-                infoList0 = infoList0.plus("\n\n")
-            }
-        }
-
         var MotorList = findViewById<TextView>(R.id.MotorList)
-        MotorList.text = infoList0
-
+        MotorList.text = infoList
     }
 
     fun bubbleSort(arr: Array<Array<String>>) {
