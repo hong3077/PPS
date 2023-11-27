@@ -4,10 +4,17 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.lang.Math.round
 
 
 class SubActivity : AppCompatActivity() {
+
+    var arrayString = Array(100,{Array<String>(5,{""})})
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.required_motor)
@@ -19,12 +26,7 @@ class SubActivity : AppCompatActivity() {
         var requiredPower = findViewById<TextView>(R.id.required_motor_power)
         requiredPower.text = round(((weight * 80) / 453.6)).toString() + " (watt)"
 
-
-        //여기서 제공되는 (2차원)배열은 정렬이 끝난 배열이라 가정함
-        var arrayString = arrayOf(
-            arrayOf("[SUNNYSKY] X2826 1080KV Outrunner Brushless Motor","11.1V-14.8V (3S-4S)","1000","비행기","84000"),
-            arrayOf("[SUNNYSKY] X2826 880KV Outrunner Brushless Motor","11.1V-14.8V (3S-4S)","900","비행기","84800"),
-            arrayOf("[SUNNYSKY] X2826 740KV Outrunner Brushless Motor","11.1V-14.8V (3S-4S)","880","비행기","84800"))
+        fetchData(arrayString)
 
         Add_Info(arrayString)
         sortButtonTriggered(arrayString)
@@ -78,4 +80,58 @@ class SubActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun fetchData(arr:Array<Array<String>>) {
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://4920-203-255-63-211.ngrok-free.app")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+
+        val jsonPlaceHolderApi = retrofit.create(JsonPlaceHOlderApi::class.java)
+
+        val call: Call<List<Post>> = jsonPlaceHolderApi.getPosts()
+
+        call.enqueue(object : Callback<List<Post>> {
+            override fun onResponse(call: Call<List<Post>>, response: Response<List<Post>>) {
+                val posts: List<Post> = response.body() ?: emptyList()
+                displayPosts(posts,arr)
+            }
+
+            override fun onFailure(call: Call<List<Post>>, t: Throwable) {
+            }
+        })
+
+    }
+
+    private fun displayPosts(posts: List<Post>,arr: Array<Array<String>>) {
+        var count:Int = 0
+
+        for (post in posts) {
+            if (post.power >= 45) { //45보다 출력이 높다면
+                println("triggered!")
+                arr[count][0] = post.product_name
+                println(post.product_name)
+//                arr[count][1] = post.voltage
+//                arr[count][2] = post.power.toString()
+//                arr[count][3] = post.purpose
+//                arr[count][4] = post.cost.toString()
+                count = count + 1
+            }
+
+            val valuesArray = arrayOf(
+                post.product_name,
+                post.voltage,
+                post.power,
+                post.purpose,
+                post.cost
+            )
+
+            // Join the array elements into a single string
+            //val content = valuesArray.joinToString(separator = "\n") { "$it" }
+
+            // Append the content to the textView
+            //textView.append("$content\n\n")
+        }
+    }
+
 }
