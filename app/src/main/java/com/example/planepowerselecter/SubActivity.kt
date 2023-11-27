@@ -9,7 +9,6 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.lang.Math.round
 
 
 class SubActivity : AppCompatActivity() {
@@ -19,14 +18,12 @@ class SubActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.required_motor)
 
+        var weight:Int = intent.getIntExtra("aircraftWeight",0)
+        var requiredPowerText = findViewById<TextView>(R.id.required_motor_power)
+        weight = ((weight * 80) / 453.6).toInt()
 
-        var weight = intent.getIntExtra("aircraftWeight",0)
-        
-        
-        var requiredPower = findViewById<TextView>(R.id.required_motor_power)
-        requiredPower.text = round(((weight * 80) / 453.6)).toString() + " (watt)"
-
-        fetchData(arrayString)
+        requiredPowerText.text = weight.toString() + " (watt)"
+        fetchData(arrayString,weight)
 
         sortButtonTriggered(arrayString)
     }
@@ -81,7 +78,7 @@ class SubActivity : AppCompatActivity() {
         }
     }
 
-    private fun fetchData(arrayString:Array<Array<String>>) {
+    private fun fetchData(arrayString:Array<Array<String>>,weight:Int) {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://4920-203-255-63-211.ngrok-free.app")
             .addConverterFactory(GsonConverterFactory.create())
@@ -94,7 +91,7 @@ class SubActivity : AppCompatActivity() {
         call.enqueue(object : Callback<List<Post>> {
             override fun onResponse(call: Call<List<Post>>, response: Response<List<Post>>) {
                 val posts: List<Post> = response.body() ?: emptyList()
-                displayPosts(posts,arrayString)
+                displayPosts(posts,arrayString,weight)
                 Add_Info(arrayString)
             }
 
@@ -104,28 +101,27 @@ class SubActivity : AppCompatActivity() {
 
     }
 
-    private fun displayPosts(posts: List<Post>, arrayString: Array<Array<String>>) {
+    private fun displayPosts(posts: List<Post>, arrayString: Array<Array<String>>,weight:Int) {
         var count:Int = 0
 
         for (post in posts) {
-            if (post.power >= 45) { //45보다 출력이 높다면
+            if (post.power >= weight) { //45보다 출력이 높다면
                 println("triggered!")
                 arrayString[count][0] = post.product_name
-                println(arrayString[count][0])
-//                arr[count][1] = post.voltage
-//                arr[count][2] = post.power.toString()
-//                arr[count][3] = post.purpose
-//                arr[count][4] = post.cost.toString()
+                arrayString[count][1] = post.voltage
+                arrayString[count][2] = post.power.toString()
+                arrayString[count][3] = post.purpose
+                arrayString[count][4] = post.cost.toString()
                 count = count + 1
             }
 
-            val valuesArray = arrayOf(
-                post.product_name,
-                post.voltage,
-                post.power,
-                post.purpose,
-                post.cost
-            )
+//            val valuesArray = arrayOf(
+//                post.product_name,
+//                post.voltage,
+//                post.power,
+//                post.purpose,
+//                post.cost
+//            )
 
             // Join the array elements into a single string
             //val content = valuesArray.joinToString(separator = "\n") { "$it" }
