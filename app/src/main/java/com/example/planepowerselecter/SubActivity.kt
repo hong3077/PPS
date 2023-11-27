@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class SubActivity : AppCompatActivity() {
 
-    var arrayString = Array(100,{Array<String>(5,{""})})
+    var arrayString = Array(100,{Array<String>(5,{"0"})})
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.required_motor)
@@ -30,8 +30,8 @@ class SubActivity : AppCompatActivity() {
 
 
     fun sortButtonTriggered(arrayString: Array<Array<String>>){
-        val button = findViewById<Button>(R.id.sort_button)
-        button.setOnClickListener(){
+        val sortingButton = findViewById<Button>(R.id.sort_button)
+        sortingButton.setOnClickListener(){
             bubbleSort(arrayString)
             Add_Info(arrayString)
         }
@@ -40,26 +40,40 @@ class SubActivity : AppCompatActivity() {
 
     fun Add_Info(arrayString: Array<Array<String>>){
 
+        //공백없는 배열 크기
+        fun ArrayCount(arrayString: Array<Array<String>>):Int{
+            var count:Int = 0
+            for(i:Int in 0..(arrayString.size - 1)) {
+                if (arrayString[i][0] != "0") {
+                    count++
+                }
+            }
+            return count
+        }
+        var arraySize = ArrayCount(arrayString)
 
         //리스트 입력 파트
-        var infoList1 = Array<String>(arrayString.count(),{""})
-        for(i: Int in 0..(arrayString.count()-1)){
+        var infoList1 = Array<String>(arrayString.size,{""})
+
+        for(i in 0..(arrayString.count() - 1)){
             for(j: Int in 0..4){
-                infoList1[i] = infoList1[i].plus(arrayString[i][j])
-                infoList1[i] = infoList1[i].plus(" | ")
+                if (arrayString[i][0] != "0") {
+                    infoList1[i] = infoList1[i].plus(arrayString[i][j])
+                    infoList1[i] = infoList1[i].plus(" | ")
+                }
             }
         }
 
         var infoList0:String = ""
-        for(i: Int in 0..(arrayString.count()-1)){
-            infoList0 = infoList0.plus(infoList1[i])
-            infoList0 = infoList0.plus("\n\n")
+        for(i: Int in 0..(arraySize-1)){
+            if(arrayString[i][0] != "0") {
+                infoList0 = infoList0.plus(infoList1[i])
+                infoList0 = infoList0.plus("\n\n")
+            }
         }
 
         var MotorList = findViewById<TextView>(R.id.MotorList)
-        MotorList.text = infoList0;
-        println(infoList0)
-
+        MotorList.text = infoList0
 
     }
 
@@ -80,7 +94,7 @@ class SubActivity : AppCompatActivity() {
 
     private fun fetchData(arrayString:Array<Array<String>>,weight:Int) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://4920-203-255-63-211.ngrok-free.app")
+            .baseUrl("https://fbb0-203-255-63-211.ngrok-free.app")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -105,9 +119,9 @@ class SubActivity : AppCompatActivity() {
         var count:Int = 0
 
         for (post in posts) {
-            if (post.power >= weight) { //45보다 출력이 높다면
-                println("triggered!")
+            if (post.power >= weight) {
                 arrayString[count][0] = post.product_name
+                //println(arrayString[count][0])
                 arrayString[count][1] = post.voltage
                 arrayString[count][2] = post.power.toString()
                 arrayString[count][3] = post.purpose
