@@ -28,7 +28,6 @@ class SubActivity : AppCompatActivity() {
 
         fetchData(arrayString)
 
-        Add_Info(arrayString)
         sortButtonTriggered(arrayString)
     }
 
@@ -46,8 +45,8 @@ class SubActivity : AppCompatActivity() {
 
 
         //리스트 입력 파트
-        var infoList1 = Array<String>(arrayString.size,{""})
-        for(i: Int in 0..(arrayString.size-1)){
+        var infoList1 = Array<String>(arrayString.count(),{""})
+        for(i: Int in 0..(arrayString.count()-1)){
             for(j: Int in 0..4){
                 infoList1[i] = infoList1[i].plus(arrayString[i][j])
                 infoList1[i] = infoList1[i].plus(" | ")
@@ -55,13 +54,14 @@ class SubActivity : AppCompatActivity() {
         }
 
         var infoList0:String = ""
-        for(i: Int in 0..(arrayString.size-1)){
+        for(i: Int in 0..(arrayString.count()-1)){
             infoList0 = infoList0.plus(infoList1[i])
             infoList0 = infoList0.plus("\n\n")
         }
 
         var MotorList = findViewById<TextView>(R.id.MotorList)
         MotorList.text = infoList0;
+        println(infoList0)
 
 
     }
@@ -81,7 +81,7 @@ class SubActivity : AppCompatActivity() {
         }
     }
 
-    private fun fetchData(arr:Array<Array<String>>) {
+    private fun fetchData(arrayString:Array<Array<String>>) {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://4920-203-255-63-211.ngrok-free.app")
             .addConverterFactory(GsonConverterFactory.create())
@@ -94,7 +94,8 @@ class SubActivity : AppCompatActivity() {
         call.enqueue(object : Callback<List<Post>> {
             override fun onResponse(call: Call<List<Post>>, response: Response<List<Post>>) {
                 val posts: List<Post> = response.body() ?: emptyList()
-                displayPosts(posts,arr)
+                displayPosts(posts,arrayString)
+                Add_Info(arrayString)
             }
 
             override fun onFailure(call: Call<List<Post>>, t: Throwable) {
@@ -103,14 +104,14 @@ class SubActivity : AppCompatActivity() {
 
     }
 
-    private fun displayPosts(posts: List<Post>,arr: Array<Array<String>>) {
+    private fun displayPosts(posts: List<Post>, arrayString: Array<Array<String>>) {
         var count:Int = 0
 
         for (post in posts) {
             if (post.power >= 45) { //45보다 출력이 높다면
                 println("triggered!")
-                arr[count][0] = post.product_name
-                println(post.product_name)
+                arrayString[count][0] = post.product_name
+                println(arrayString[count][0])
 //                arr[count][1] = post.voltage
 //                arr[count][2] = post.power.toString()
 //                arr[count][3] = post.purpose
