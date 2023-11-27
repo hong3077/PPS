@@ -7,7 +7,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-
+/**
+ * The main activity of the Plane Power Selector app.
+ * Allows users to input the weight of an aircraft and navigate to a SubActivity for further calculations.
+ */
 class MainActivity : AppCompatActivity() {
 
     //lateinit var requiredPower: TextView
@@ -19,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         ButtonTriggered()
     }
 
+    /**
+     * Sets up the click listener for the calculate button.
+     */
     fun ButtonTriggered(){
         val button = findViewById<Button>(R.id.calculateButton)
         button.setOnClickListener{

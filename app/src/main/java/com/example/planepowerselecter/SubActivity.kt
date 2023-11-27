@@ -10,7 +10,10 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-
+/**
+ * It calculates and displays the required motor power based on the aircraft weight.
+ * It fetches data from a remote server using Retrofit, sorts and displays the motor information.
+ */
 class SubActivity : AppCompatActivity() {
 
     var arrayString = Array(100,{Array<String>(5,{"0"})})
@@ -27,8 +30,9 @@ class SubActivity : AppCompatActivity() {
 
         sortButtonTriggered(arrayString)
     }
-
-
+    /**
+     * Sets up the click listener for the sort button.
+     */
     fun sortButtonTriggered(arrayString: Array<Array<String>>){
         val sortingButton = findViewById<Button>(R.id.sort_button)
         sortingButton.setOnClickListener(){
@@ -37,28 +41,39 @@ class SubActivity : AppCompatActivity() {
         }
 
     }
-
+    /**
+     * Adds motor information to the TextView for display.
+     */
     fun Add_Info(arrayString: Array<Array<String>>){
 
         //리스트 입력 파트
         var infoList1 = Array<String>(arrayString.size,{""})
-        var infoList:String = ""
 
-        for(i in 0..(arrayString.size - 1)){
+        for(i in 0..(arrayString.count() - 1)){
             for(j: Int in 0..4){
                 if (arrayString[i][0] != "0") {
                     infoList1[i] = infoList1[i].plus(arrayString[i][j])
                     infoList1[i] = infoList1[i].plus(" | ")
-                    infoList = infoList.plus(infoList1[i])
-                    infoList = infoList.plus("\n\n")
                 }
             }
         }
 
+        var infoList0:String = ""
+        for(i: Int in 0..(arrayString.size - 1)){
+            if(arrayString[i][0] != "0") {
+                infoList0 = infoList0.plus(infoList1[i])
+                infoList0 = infoList0.plus("\n\n")
+            }
+        }
+
         var MotorList = findViewById<TextView>(R.id.MotorList)
-        MotorList.text = infoList
+        MotorList.text = infoList0
+
     }
 
+    /**
+     * Performs bubble sort on the 2D array based on the motor power (ascending order).
+     */
     fun bubbleSort(arr: Array<Array<String>>) {
         val n = arr.size
 
@@ -74,6 +89,9 @@ class SubActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Fetches data from the server using Retrofit.
+     */
     private fun fetchData(arrayString:Array<Array<String>>,weight:Int) {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://fbb0-203-255-63-211.ngrok-free.app")
@@ -97,6 +115,9 @@ class SubActivity : AppCompatActivity() {
 
     }
 
+    /**
+     * Adds motor information from the fetched posts to the arrayString.
+     */
     private fun displayPosts(posts: List<Post>, arrayString: Array<Array<String>>,weight:Int) {
         var count:Int = 0
 
