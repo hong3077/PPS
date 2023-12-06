@@ -23,10 +23,11 @@ class SubActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.required_motor)
 
-        val weight:Int = intent.getIntExtra("aircraftWeight",0)
+        val aircraftWeight:Int = intent.getIntExtra("aircraftWeight",0)
         val requiredPowerText = findViewById<TextView>(R.id.required_motor_power)
+        val weight = calculator.weightToPower(aircraftWeight)
 
-        requiredPowerText.text = calculator.weightToPower(weight).toString() + " (watt)"
+        requiredPowerText.text = weight.toString() + " (watt)"
         fetchData(arrayString,weight)
 
         powerSortButtonTriggered(arrayString)

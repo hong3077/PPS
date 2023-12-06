@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
             //입력이 없을 경우
             if (input == ""||input == "0") {
-                Toast.makeText(getApplicationContext(), "모터 중량이 입력되지 않았습니다", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "모터 중량이 입력되지 않았습니다", Toast.LENGTH_LONG).show()
             }
 
             //입력이 있을 경우
