@@ -19,18 +19,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ButtonTriggered()
+        buttonTriggered()
     }
 
     /**
      * Sets up the click listener for the calculate button.
      */
-    fun ButtonTriggered(){
+    private fun buttonTriggered(){
         val button = findViewById<Button>(R.id.calculateButton)
         button.setOnClickListener{
             val intent = Intent(this,SubActivity::class.java)
-            var input: String = findViewById<TextView>(R.id.aircraft_weight_value).text.toString()
-            var weight: Int
+            val input: String = findViewById<TextView>(R.id.aircraft_weight_value).text.toString()
+            val weight: Int
 
             //입력이 없을 경우
             if (input == ""||input == "0") {

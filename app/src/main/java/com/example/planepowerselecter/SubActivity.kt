@@ -16,15 +16,15 @@ import retrofit2.converter.gson.GsonConverterFactory
  */
 class SubActivity : AppCompatActivity() {
 
-    var calculator = Calculator()
-    var sort = Sorter()
-    var arrayString = Array(100,{Array<String>(5,{"0"})})
+    private var calculator = Calculator()
+    private var sort = Sorter()
+    private var arrayString = Array(100) { Array<String>(5) { "0" } }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.required_motor)
 
-        var weight:Int = intent.getIntExtra("aircraftWeight",0)
-        var requiredPowerText = findViewById<TextView>(R.id.required_motor_power)
+        val weight:Int = intent.getIntExtra("aircraftWeight",0)
+        val requiredPowerText = findViewById<TextView>(R.id.required_motor_power)
 
         requiredPowerText.text = calculator.weightToPower(weight).toString() + " (watt)"
         fetchData(arrayString,weight)
@@ -35,52 +35,50 @@ class SubActivity : AppCompatActivity() {
     /**
      * Sets up the click listener for the sort button.
      */
-    fun powerSortButtonTriggered(arrayString: Array<Array<String>>){
+    private fun powerSortButtonTriggered(arrayString: Array<Array<String>>){
         val sortingButton = findViewById<Button>(R.id.power_sort_button)
         var isFirstTime = true
         sortingButton.setOnClickListener(){
-            if (isFirstTime){
+            isFirstTime = if (isFirstTime){
                 //오름차순
                 sort.bottomToTopPOWER(arrayString)
-                Add_Info(arrayString)
-                isFirstTime = false
-            }
-            else{
+                addInfo(arrayString)
+                false
+            } else{
                 //내림차순
                 sort.topToBottomPOWER(arrayString)
-                Add_Info(arrayString)
-                isFirstTime = true
+                addInfo(arrayString)
+                true
             }
         }
     }
 
-    fun costSortButtonTriggered(arrayString: Array<Array<String>>){
+    private fun costSortButtonTriggered(arrayString: Array<Array<String>>){
         val sortingButton = findViewById<Button>(R.id.cost_sort_button)
         var isFirstTime = true
         sortingButton.setOnClickListener(){
-            if (isFirstTime){
+            isFirstTime = if (isFirstTime){
                 //오름차순
                 sort.bottomToTopCOST(arrayString)
-                Add_Info(arrayString)
-                isFirstTime = false
-            }
-            else{
+                addInfo(arrayString)
+                false
+            } else{
                 //내림차순
                 sort.topToBottomCOST(arrayString)
-                Add_Info(arrayString)
-                isFirstTime = true
+                addInfo(arrayString)
+                true
             }
         }
     }
     /**
      * Adds motor information to the TextView for display.
      */
-    fun Add_Info(arrayString: Array<Array<String>>){
+    fun addInfo(arrayString: Array<Array<String>>){
 
         //리스트 입력 파트
-        var infoList1 = Array<String>(arrayString.size,{""})
+        val infoList1 = Array<String>(arrayString.size) { "" }
 
-        for(i in 0..(arrayString.count() - 1)){
+        for(i in arrayString.indices){
             for(j: Int in 0..4){
                 if (arrayString[i][0] != "0") {
                     infoList1[i] = infoList1[i].plus(arrayString[i][j])
@@ -90,15 +88,15 @@ class SubActivity : AppCompatActivity() {
         }
 
         var infoList0:String = ""
-        for(i: Int in 0..(arrayString.size - 1)){
+        for(i: Int in arrayString.indices){
             if(arrayString[i][0] != "0") {
                 infoList0 = infoList0.plus(infoList1[i])
                 infoList0 = infoList0.plus("\n\n")
             }
         }
 
-        var MotorList = findViewById<TextView>(R.id.MotorList)
-        MotorList.text = infoList0
+        val motorList = findViewById<TextView>(R.id.MotorList)
+        motorList.text = infoList0
 
     }
 
@@ -113,13 +111,13 @@ class SubActivity : AppCompatActivity() {
 
         val jsonPlaceHolderApi = retrofit.create(JsonPlaceHOlderApi::class.java)
 
-        val call: Call<List<Post>> = jsonPlaceHolderApi.getPosts()
+        val call: Call<List<Post>> = jsonPlaceHolderApi.posts
 
         call.enqueue(object : Callback<List<Post>> {
             override fun onResponse(call: Call<List<Post>>, response: Response<List<Post>>) {
                 val posts: List<Post> = response.body() ?: emptyList()
                 displayPosts(posts,arrayString,weight)
-                Add_Info(arrayString)
+                addInfo(arrayString)
             }
 
             override fun onFailure(call: Call<List<Post>>, t: Throwable) {
@@ -142,7 +140,7 @@ class SubActivity : AppCompatActivity() {
                 arrayString[count][2] = post.power.toString()
                 arrayString[count][3] = post.purpose
                 arrayString[count][4] = post.cost.toString()
-                count = count + 1
+                count += 1
             }
         }
     }
