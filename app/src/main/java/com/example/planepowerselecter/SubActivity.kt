@@ -29,18 +29,48 @@ class SubActivity : AppCompatActivity() {
         requiredPowerText.text = calculator.weightToPower(weight).toString() + " (watt)"
         fetchData(arrayString,weight)
 
-        sortButtonTriggered(arrayString)
+        powerSortButtonTriggered(arrayString)
+        costSortButtonTriggered(arrayString)
     }
     /**
      * Sets up the click listener for the sort button.
      */
-    fun sortButtonTriggered(arrayString: Array<Array<String>>){
-        val sortingButton = findViewById<Button>(R.id.sort_button)
+    fun powerSortButtonTriggered(arrayString: Array<Array<String>>){
+        val sortingButton = findViewById<Button>(R.id.power_sort_button)
+        var isFirstTime = true
         sortingButton.setOnClickListener(){
-            sort.bubbleSort(arrayString)
-            Add_Info(arrayString)
+            if (isFirstTime){
+                //오름차순
+                sort.bottomToTopPOWER(arrayString)
+                Add_Info(arrayString)
+                isFirstTime = false
+            }
+            else{
+                //내림차순
+                sort.topToBottomPOWER(arrayString)
+                Add_Info(arrayString)
+                isFirstTime = true
+            }
         }
+    }
 
+    fun costSortButtonTriggered(arrayString: Array<Array<String>>){
+        val sortingButton = findViewById<Button>(R.id.cost_sort_button)
+        var isFirstTime = true
+        sortingButton.setOnClickListener(){
+            if (isFirstTime){
+                //오름차순
+                sort.bottomToTopCOST(arrayString)
+                Add_Info(arrayString)
+                isFirstTime = false
+            }
+            else{
+                //내림차순
+                sort.topToBottomCOST(arrayString)
+                Add_Info(arrayString)
+                isFirstTime = true
+            }
+        }
     }
     /**
      * Adds motor information to the TextView for display.
