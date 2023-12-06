@@ -16,6 +16,8 @@ import retrofit2.converter.gson.GsonConverterFactory
  */
 class SubActivity : AppCompatActivity() {
 
+    var calculator = Calculator()
+    var sort = Sorter()
     var arrayString = Array(100,{Array<String>(5,{"0"})})
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,9 +25,8 @@ class SubActivity : AppCompatActivity() {
 
         var weight:Int = intent.getIntExtra("aircraftWeight",0)
         var requiredPowerText = findViewById<TextView>(R.id.required_motor_power)
-        weight = ((weight * 80) / 453.6).toInt()
 
-        requiredPowerText.text = weight.toString() + " (watt)"
+        requiredPowerText.text = calculator.weightToPower(weight).toString() + " (watt)"
         fetchData(arrayString,weight)
 
         sortButtonTriggered(arrayString)
@@ -36,7 +37,7 @@ class SubActivity : AppCompatActivity() {
     fun sortButtonTriggered(arrayString: Array<Array<String>>){
         val sortingButton = findViewById<Button>(R.id.sort_button)
         sortingButton.setOnClickListener(){
-            bubbleSort(arrayString)
+            sort.bubbleSort(arrayString)
             Add_Info(arrayString)
         }
 
@@ -72,29 +73,11 @@ class SubActivity : AppCompatActivity() {
     }
 
     /**
-     * Performs bubble sort on the 2D array based on the motor power (ascending order).
-     */
-    fun bubbleSort(arr: Array<Array<String>>) {
-        val n = arr.size
-
-        for (i in 0 until n - 1) {
-            for (j in 0 until n - i - 1) {
-                if (arr[j][2].toInt() > arr[j + 1][2].toInt()) { //모터의 출력을 오름차순으로 정렬
-                    // 스와핑
-                    val temp = arr[j]
-                    arr[j] = arr[j + 1]
-                    arr[j + 1] = temp
-                }
-            }
-        }
-    }
-
-    /**
      * Fetches data from the server using Retrofit.
      */
     private fun fetchData(arrayString:Array<Array<String>>,weight:Int) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://fbb0-203-255-63-211.ngrok-free.app")
+            .baseUrl("https://1b13-203-255-63-211.ngrok-free.app")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
