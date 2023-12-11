@@ -9,6 +9,8 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.text.NumberFormat
+import java.util.Locale
 
 /**
  * It calculates and displays the required motor power based on the aircraft weight.
@@ -98,7 +100,8 @@ class SubActivity : AppCompatActivity() {
                 infoList1[i] = infoList1[i].plus("\n")
 
                 //가격
-                infoList1[i] = infoList1[i].plus("가격 : " + arrayString[i][4] + "원")
+                var formattedNumber = NumberFormat.getNumberInstance(Locale.getDefault()).format(arrayString[i][4].toLong())
+                infoList1[i] = infoList1[i].plus("가격 : " + formattedNumber + "원")
                 infoList1[i] = infoList1[i].plus("\n")
             }
         }
@@ -121,7 +124,7 @@ class SubActivity : AppCompatActivity() {
      */
     private fun fetchData(arrayString:Array<Array<String>>,weight:Int) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://2ed5-115-160-106-219.ngrok-free.app")
+            .baseUrl("https://f53c-203-255-63-211.ngrok-free.app")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
