@@ -80,11 +80,26 @@ class SubActivity : AppCompatActivity() {
         val infoList1 = Array<String>(arrayString.size) { "" }
 
         for(i in arrayString.indices){
-            for(j: Int in 0..4){
-                if (arrayString[i][0] != "0") {
-                    infoList1[i] = infoList1[i].plus(arrayString[i][j])
-                    infoList1[i] = infoList1[i].plus(" | ")
-                }
+            if (arrayString[i][0] != "0") {
+                // 제품명
+                infoList1[i] = infoList1[i].plus(arrayString[i][0])
+                infoList1[i] = infoList1[i].plus("\n")
+
+                // 사용 전압
+                infoList1[i] = infoList1[i].plus("전압 : " + arrayString[i][1])
+                infoList1[i] = infoList1[i].plus("\n")
+
+                // 출력
+                infoList1[i] = infoList1[i].plus("출력 : " + arrayString[i][2] + "W")
+                infoList1[i] = infoList1[i].plus("\n")
+
+                //목적
+                infoList1[i] = infoList1[i].plus("목적 : " + arrayString[i][3])
+                infoList1[i] = infoList1[i].plus("\n")
+
+                //가격
+                infoList1[i] = infoList1[i].plus("가격 : " + arrayString[i][4] + "원")
+                infoList1[i] = infoList1[i].plus("\n")
             }
         }
 
@@ -106,7 +121,7 @@ class SubActivity : AppCompatActivity() {
      */
     private fun fetchData(arrayString:Array<Array<String>>,weight:Int) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://1b13-203-255-63-211.ngrok-free.app")
+            .baseUrl("https://2ed5-115-160-106-219.ngrok-free.app")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
